@@ -62,8 +62,8 @@ The application uses the following database tables:
 
 ```
 lein repl
-(require 'blog.db)
-(blog.db/initialize)
+(require 'blog.domain)
+(blog.domain/initialize)
 ```
 
 3. Start the web server:

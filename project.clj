@@ -13,6 +13,9 @@
                  [com.github.seancorfield/next.jdbc "1.3.1002"]
                  [org.postgresql/postgresql "42.7.5"]
                  [buddy/buddy-hashers "2.0.167"]]
+  :ring {:handler blog-clj.core/app
+         :auto-reload? true
+         :auto-refresh? true}
   :main ^:skip-aot blog-clj.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
